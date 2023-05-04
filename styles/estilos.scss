@@ -1,0 +1,210 @@
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+
+}
+
+.navbar-toggler-icon:hover{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='red' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.carousel-inner{
+    max-height: calc(100vh - 150px);
+    overflow: hidden;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+}
+
+.anexate{
+    position: relative; 
+    bottom: 14px;
+}
+
+form{
+    height: 112px;
+    width: 100%;
+    color: rgba(245, 245, 245, 0.925);
+    background-color: black;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 70px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+label span{
+    color: #F84646;
+}
+
+input[type=text]{
+    width: 200px;
+    bottom: 10px;
+    left: 5px;
+    border: none;
+    border-bottom: 2px solid #F84646;
+    background-color: black;
+    color: whitesmoke;
+    outline: none;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+::placeholder{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+
+}
+
+input[type=submit]{
+    width: 80px;
+    bottom: 7px;
+    left: 12px;
+    background-color: #F84646;
+    color: whitesmoke;
+    border-style: none;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    cursor: pointer;
+    border-radius: 1.5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.videoContainer{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    background-image: linear-gradient(black,rgb(37, 37, 37));
+}
+
+.invertido{
+    background-image: linear-gradient(rgb(37, 37, 37),black);
+}
+
+.responsiveIframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+iframe{
+    margin: auto;
+    display: block;
+}
+
+.videoDescription{
+    background-color: black;
+    height: 62px;
+        h2{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 10px;
+        font-size: 16px;
+        color: whitesmoke;
+        font-weight: 400;
+        padding-top: 10px;
+        }
+}
+
+footer{
+    background-color: black;
+    padding: 14.5px;
+    padding-left: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    letter-spacing: 20px;
+    a{
+    color: whitesmoke;
+    }
+}
+
+#instagram :hover{
+    color: #C13584
+}
+#spotify :hover{
+    color: #1DB954
+}
+#youtube :hover{
+    color: #FF0000
+}
+#tiktok :hover{
+    color: #00f2ea
+}
+
+@media only screen and (min-width: 568px){
+    form{
+        height: 60px;
+        font-size: 20px;
+    }
+    .anexate{
+        bottom: 22px;
+    }
+    input[type=text]{
+        position: relative;
+        bottom: 27px;
+        width: 320px;
+        font-size: 16px;
+    }
+    input[type=submit]{
+        position: relative;
+        bottom: 22px;
+    }
+    ::placeholder{
+        font-size: 16px;
+    }
+    .videoDescription h2{
+        font-size: 18px;
+    }    
+}
+
+@media only screen and (min-width: 992px){
+    .responsiveIframe{
+        display: block;
+        max-width: 950px;
+        max-height: 534px;
+    }
+    .videoContainer{
+        max-height: 534px;
+        padding: 265px;
+    }
+    .videoDescription{
+        background-color: rgb(37, 37, 37);
+        height: 100px;
+        padding-top: 25px;
+    }
+    .dark{
+        background-color: black;
+    }
+    .anexate{
+        display: flex;
+        justify-content: center;
+        top: 1px;
+        right: 210px;
+    }
+    input[type=text]{
+        left: 130px;
+        bottom: 38px;
+    }
+    input[type=submit]{
+        left: 140px;
+        bottom: 38px;
+    }
+    footer{
+        font-size: 40px;
+        letter-spacing: 30px;
+    }
+}
