@@ -276,6 +276,13 @@ footer a {
   background-image: url(../images/G20.JPG);
 }
 
+.construction {
+  background-image: url(../images/construction.jpeg);
+  height: 100vh;
+  width: auto;
+  background-position: bottom;
+}
+
 @media only screen and (min-width: 410px) {
   .videoDescription h2 {
     font-size: 20px;
