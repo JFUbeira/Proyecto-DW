@@ -1,5 +1,17 @@
+.navbar {
+  background-color: black;
+}
+
+.navbar-brand {
+  font-family: "Big Caslon";
+  font-size: 25px;
+  padding-left: 25px;
+  letter-spacing: 3px;
+}
+
 .navbar-toggler {
   border: none;
+  padding-right: 25px;
 }
 
 .navbar-toggler:focus {
@@ -7,7 +19,19 @@
 }
 
 .navbar-toggler-icon:hover {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='red' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(248, 70, 70)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link {
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #F84646;
+}
+
+.currentPage {
+  color: #F84646;
 }
 
 .carousel-inner {
@@ -37,8 +61,13 @@ form {
   font-family: "Poppins", sans-serif;
 }
 
+.indie {
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+}
+
 label span {
-  color: #F84646;
+  color: #f84646;
 }
 
 input[type=text] {
@@ -247,6 +276,11 @@ footer a {
   background-image: url(../images/G20.JPG);
 }
 
+@media only screen and (min-width: 410px) {
+  .videoDescription h2 {
+    font-size: 20px;
+  }
+}
 @media only screen and (min-width: 480px) {
   .galeria {
     grid-template-columns: repeat(3, 1fr);
@@ -266,12 +300,18 @@ footer a {
   }
 }
 @media only screen and (min-width: 568px) {
+  .navbar-brand {
+    font-size: 30px;
+  }
   form {
     height: 60px;
     font-size: 20px;
   }
   .anexate {
     bottom: 22px;
+  }
+  .indie {
+    font-size: 25px;
   }
   input[type=text] {
     position: relative;
@@ -289,8 +329,12 @@ footer a {
   ::placeholder {
     font-size: 16px;
   }
+  .videoDescription {
+    position: relative;
+    padding-bottom: 70px;
+  }
   .videoDescription h2 {
-    font-size: 18px;
+    font-size: 25px;
   }
 }
 @media only screen and (min-width: 810px) {
@@ -339,6 +383,9 @@ footer a {
   }
 }
 @media only screen and (min-width: 992px) {
+  .navbar-brand {
+    font-size: 40px;
+  }
   .responsiveIframe {
     display: block;
     max-width: 950px;
@@ -359,8 +406,8 @@ footer a {
   .anexate {
     display: flex;
     justify-content: center;
-    top: 1px;
-    right: 210px;
+    top: 10px;
+    right: 240px;
   }
   input[type=text] {
     left: 130px;
@@ -368,7 +415,7 @@ footer a {
   }
   input[type=submit] {
     left: 140px;
-    bottom: 38px;
+    bottom: 34px;
   }
   footer {
     font-size: 40px;
