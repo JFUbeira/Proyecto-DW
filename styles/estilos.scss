@@ -1,5 +1,6 @@
 $color1: #F84646;
 
+// Navbar start
 .navbar{
     background-color: black;
 }
@@ -36,7 +37,38 @@ $color1: #F84646;
 .currentPage{
     color: $color1;
 }
+// Navbar end
 
+// Footer start
+footer{
+    background-color: black;
+    padding: 14.5px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    letter-spacing: 20px;
+        a{
+        color: whitesmoke;
+        }
+}
+
+#instagram :hover{
+    color: #C13584
+}
+#spotify :hover{
+    color: #1DB954
+}
+#youtube :hover{
+    color: #FF0000
+}
+#tiktok :hover{
+    color: #00f2ea
+}
+// Footer end
+
+// Index start
 .carousel-inner{
     max-height: calc(100vh - 150px);
     overflow: hidden;
@@ -149,34 +181,67 @@ iframe{
         padding-top: 10px;
         }
 }
+// Index end
 
-footer{
-    background-color: black;
-    padding: 14.5px;
-    padding-left: 40px;
-    padding-bottom: 20px;
+// Música start
+.yaLoSe{
+    background-color: #282828;
+    height: 400px;
+    h2{
+        position: relative;
+        bottom: 10px;
+    }
+}
+
+.promo{
+    font-family: "Gotham-Bold";
+    font-size: 20px;
+    letter-spacing: -0.5px;
     display: flex;
     justify-content: center;
-    font-size: 25px;
-    letter-spacing: 20px;
-        a{
-        color: whitesmoke;
+    position: relative;
+    color: #FFFFFF;
+}
+
+.promo2{
+    @extend .promo;
+    height: 0px;
+    position: relative;
+    top: 9px;
+}
+
+#nuestra{
+    top: 20px;
+}
+
+.comoMessi{
+    background-color: #3D7AB7;
+    h2{
+        position: relative;
+        top: 15px;
+    }
+}
+
+.discografia{
+    width: 100%;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, 410px);
+    .disco1{
+        background-color: #782808;
+    }
+    .disco2{
+        background-color: #72796C;
+        iframe{
+            position: relative;
+            top: 32.5px;
         }
+    }
 }
+// Música end
 
-#instagram :hover{
-    color: #C13584
-}
-#spotify :hover{
-    color: #1DB954
-}
-#youtube :hover{
-    color: #FF0000
-}
-#tiktok :hover{
-    color: #00f2ea
-}
-
+// Galería start
 .galeria{
     width: 100%;
     min-height: 500px;
@@ -184,57 +249,55 @@ footer{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8,200px);
-}
-
-.item{
+    .item{
     border: 0.1px solid rgba(131, 131, 131, 0.555);
     background-size: cover;
     background-position: center;
-}
+    }
 
-.item1{
-    background-image: url(../images/G1.JPG);
+    .item1{
+        background-image: url(../images/G1.JPG);
+    }.item2{
+        background-image: url(../images/G2.JPG);
+    }.item3{
+        background-image: url(../images/G3.JPG);
+    }.item4{
+        background-image: url(../images/G4.JPG);
+    }.item5{
+        background-image: url(../images/G5.JPG);
+    }.item6{
+        background-image: url(../images/G6.JPG);
+    }.item7{
+        background-image: url(../images/G7.JPG);
+    }.item8{
+        background-image: url(../images/G8.JPG);
+    }.item9{
+        background-image: url(../images/G9.JPG);
+    }.item10{
+        background-image: url(../images/G10.JPG);
+    }.item11{
+        background-image: url(../images/G11.JPG);
+    }.item12{
+        background-image: url(../images/G12.JPG);
+    }.item13{
+        background-image: url(../images/G13.JPG);
+    }.item14{
+        background-image: url(../images/G14.JPG);
+    }.item15{
+        background-image: url(../images/G15.JPG);
+    }.item16{
+        background-image: url(../images/G16.JPG);
+    }.item17{
+        background-image: url(../images/G17.JPG);
+    }.item18{
+        background-image: url(../images/G18.JPG);
+    }.item19{
+        background-image: url(../images/G19.JPG);
+    }.item20{
+        background-image: url(../images/G20.JPG);
+    }
 }
-.item2{
-    background-image: url(../images/G2.JPG);
-}.item3{
-    background-image: url(../images/G3.JPG);
-}.item4{
-    background-image: url(../images/G4.JPG);
-}.item5{
-    background-image: url(../images/G5.JPG);
-}.item6{
-    background-image: url(../images/G6.JPG);
-}.item7{
-    background-image: url(../images/G7.JPG);
-}.item8{
-    background-image: url(../images/G8.JPG);
-}.item9{
-    background-image: url(../images/G9.JPG);
-}.item10{
-    background-image: url(../images/G10.JPG);
-}.item11{
-    background-image: url(../images/G11.JPG);
-}.item12{
-    background-image: url(../images/G12.JPG);
-}.item13{
-    background-image: url(../images/G13.JPG);
-}.item14{
-    background-image: url(../images/G14.JPG);
-}.item15{
-    background-image: url(../images/G15.JPG);
-}.item16{
-    background-image: url(../images/G16.JPG);
-}.item17{
-    background-image: url(../images/G17.JPG);
-}.item18{
-    background-image: url(../images/G18.JPG);
-}.item19{
-    background-image: url(../images/G19.JPG);
-}
-.item20{
-    background-image: url(../images/G20.JPG);
-}
+// Galería end
 
 .construction{
     background-image: url(../images/construction.jpeg);
@@ -243,6 +306,7 @@ footer{
     background-position: bottom;
 }
 
+// Media queries
 @media only screen and (min-width: 410px){
     .videoDescription h2{
         font-size: 20px;
@@ -253,18 +317,18 @@ footer{
     .galeria{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(8, 200px);
-    }
-    .item2{
-        grid-column: 2/4;
-    }
-    .item6{
-        grid-column: 1/3;
-    }
-    .item9{
-        grid-column: 2/4;
-    }
-    .item13{
-        grid-column: 1/3;
+        .item2{
+            grid-column: 2/4;
+        }
+        .item6{
+            grid-column: 1/3;
+        }
+        .item9{
+            grid-column: 2/4;
+        }
+        .item13{
+            grid-column: 1/3;
+        }
     }
 }
 
@@ -309,47 +373,80 @@ footer{
     .galeria{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(7, 250px);
+        .item1{
+            grid-column: 1/3;
+        }
+        .item2{
+            grid-column: 3/4;
+        }
+        .item3{
+            grid-column: 4/5;
+        }
+        .item4{
+            grid-column: 1/2;
+        }
+        .item5{
+            grid-column: 2/4;
+        }
+        .item6{
+            grid-column: 4/5;
+        }
+        .item9{
+            grid-column: 3/5;
+        }
+        .item11{
+            grid-column: 2/4;
+        }
+        .item12{
+            grid-column: 4/5;
+        }
+        .item13{
+            grid-column: 1/3;
+        }
+        .item17{
+            grid-column: 2/4;
+        }
+        .item19{
+            grid-column: 1/3;
+        }
+        .item20{
+            grid-column: 3/5;
+        }
     }
-    .item1{
-        grid-column: 1/3;
+    .discografia{
+        min-height: 450px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 450px);
+            iframe{
+                position: relative;
+                top: 8px;
+            }
+            .disco2{
+                iframe{
+                    position: relative;
+                    top: 0px;
+                }
+            }
     }
-    .item2{
-        grid-column: 3/4;
+
+    #discografia_palabra{
+        z-index: 1000;
+        position: relative;
+        align-content: flex-end;
+        justify-content: flex-start;
+        padding-left: 20px;
+        top: 390px;
     }
-    .item3{
-        grid-column: 4/5;
+
+    #nuestra{
+        @extend #discografia_palabra;
+        justify-content: flex-end;
+        top: 38px;
+        padding-right: 20px;
     }
-    .item4{
-        grid-column: 1/2;
-    }
-    .item5{
-        grid-column: 2/4;
-    }
-    .item6{
-        grid-column: 4/5;
-    }
-    .item9{
-        grid-column: 3/5;
-    }
-    .item11{
-        grid-column: 2/4;
-    }
-    .item12{
-        grid-column: 4/5;
-    }
-    .item13{
-        grid-column: 1/3;
-    }
-    .item17{
-        grid-column: 2/4;
-    }
-    .item19{
-        grid-column: 1/3;
-    }
-    .item20{
-        grid-column: 3/5;
-    }
+
 }
+
 
 @media only screen and (min-width: 992px){
     .navbar-brand{
@@ -395,5 +492,37 @@ footer{
 @media only screen and (min-width: 1000px){
     .galeria{
         grid-template-rows: repeat(7, 350px);
+    }
+}
+
+@media only screen and (min-width: 1450px){
+    .lanzamientos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .yaLoSe{
+        iframe{
+            position: relative;
+            top: 48px;
+        }
+    }
+    .comoMessi{
+        iframe{
+            position: relative;
+            top: 15px;
+        }
+    }
+    #ultimos{
+        position: relative;
+        bottom: 325px;
+        justify-content: flex-end;
+        padding-right: 25px;
+    }
+    #lanzamientos_palabra{
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 20px;
+        position: relative;
+        top: 27px;
     }
 }

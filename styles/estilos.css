@@ -34,6 +34,36 @@
   color: #F84646;
 }
 
+footer {
+  background-color: black;
+  padding: 14.5px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  letter-spacing: 20px;
+}
+footer a {
+  color: whitesmoke;
+}
+
+#instagram :hover {
+  color: #C13584;
+}
+
+#spotify :hover {
+  color: #1DB954;
+}
+
+#youtube :hover {
+  color: #FF0000;
+}
+
+#tiktok :hover {
+  color: #00f2ea;
+}
+
 .carousel-inner {
   max-height: calc(100vh - 150px);
   overflow: hidden;
@@ -151,34 +181,59 @@ iframe {
   padding-top: 10px;
 }
 
-footer {
-  background-color: black;
-  padding: 14.5px;
-  padding-left: 40px;
-  padding-bottom: 20px;
+.yaLoSe {
+  background-color: #282828;
+  height: 400px;
+}
+.yaLoSe h2 {
+  position: relative;
+  bottom: 10px;
+}
+
+.promo, .promo2 {
+  font-family: "Gotham-Bold";
+  font-size: 20px;
+  letter-spacing: -0.5px;
   display: flex;
   justify-content: center;
-  font-size: 25px;
-  letter-spacing: 20px;
-}
-footer a {
-  color: whitesmoke;
+  position: relative;
+  color: #FFFFFF;
 }
 
-#instagram :hover {
-  color: #C13584;
+.promo2 {
+  height: 0px;
+  position: relative;
+  top: 9px;
 }
 
-#spotify :hover {
-  color: #1DB954;
+#nuestra {
+  top: 20px;
 }
 
-#youtube :hover {
-  color: #FF0000;
+.comoMessi {
+  background-color: #3D7AB7;
+}
+.comoMessi h2 {
+  position: relative;
+  top: 15px;
 }
 
-#tiktok :hover {
-  color: #00f2ea;
+.discografia {
+  width: 100%;
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2, 410px);
+}
+.discografia .disco1 {
+  background-color: #782808;
+}
+.discografia .disco2 {
+  background-color: #72796C;
+}
+.discografia .disco2 iframe {
+  position: relative;
+  top: 32.5px;
 }
 
 .galeria {
@@ -189,90 +244,69 @@ footer a {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(8, 200px);
 }
-
-.item {
+.galeria .item {
   border: 0.1px solid rgba(131, 131, 131, 0.555);
   background-size: cover;
   background-position: center;
 }
-
-.item1 {
+.galeria .item1 {
   background-image: url(../images/G1.JPG);
 }
-
-.item2 {
+.galeria .item2 {
   background-image: url(../images/G2.JPG);
 }
-
-.item3 {
+.galeria .item3 {
   background-image: url(../images/G3.JPG);
 }
-
-.item4 {
+.galeria .item4 {
   background-image: url(../images/G4.JPG);
 }
-
-.item5 {
+.galeria .item5 {
   background-image: url(../images/G5.JPG);
 }
-
-.item6 {
+.galeria .item6 {
   background-image: url(../images/G6.JPG);
 }
-
-.item7 {
+.galeria .item7 {
   background-image: url(../images/G7.JPG);
 }
-
-.item8 {
+.galeria .item8 {
   background-image: url(../images/G8.JPG);
 }
-
-.item9 {
+.galeria .item9 {
   background-image: url(../images/G9.JPG);
 }
-
-.item10 {
+.galeria .item10 {
   background-image: url(../images/G10.JPG);
 }
-
-.item11 {
+.galeria .item11 {
   background-image: url(../images/G11.JPG);
 }
-
-.item12 {
+.galeria .item12 {
   background-image: url(../images/G12.JPG);
 }
-
-.item13 {
+.galeria .item13 {
   background-image: url(../images/G13.JPG);
 }
-
-.item14 {
+.galeria .item14 {
   background-image: url(../images/G14.JPG);
 }
-
-.item15 {
+.galeria .item15 {
   background-image: url(../images/G15.JPG);
 }
-
-.item16 {
+.galeria .item16 {
   background-image: url(../images/G16.JPG);
 }
-
-.item17 {
+.galeria .item17 {
   background-image: url(../images/G17.JPG);
 }
-
-.item18 {
+.galeria .item18 {
   background-image: url(../images/G18.JPG);
 }
-
-.item19 {
+.galeria .item19 {
   background-image: url(../images/G19.JPG);
 }
-
-.item20 {
+.galeria .item20 {
   background-image: url(../images/G20.JPG);
 }
 
@@ -293,16 +327,16 @@ footer a {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(8, 200px);
   }
-  .item2 {
+  .galeria .item2 {
     grid-column: 2/4;
   }
-  .item6 {
+  .galeria .item6 {
     grid-column: 1/3;
   }
-  .item9 {
+  .galeria .item9 {
     grid-column: 2/4;
   }
-  .item13 {
+  .galeria .item13 {
     grid-column: 1/3;
   }
 }
@@ -349,44 +383,70 @@ footer a {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(7, 250px);
   }
-  .item1 {
+  .galeria .item1 {
     grid-column: 1/3;
   }
-  .item2 {
+  .galeria .item2 {
     grid-column: 3/4;
   }
-  .item3 {
+  .galeria .item3 {
     grid-column: 4/5;
   }
-  .item4 {
+  .galeria .item4 {
     grid-column: 1/2;
   }
-  .item5 {
+  .galeria .item5 {
     grid-column: 2/4;
   }
-  .item6 {
+  .galeria .item6 {
     grid-column: 4/5;
   }
-  .item9 {
+  .galeria .item9 {
     grid-column: 3/5;
   }
-  .item11 {
+  .galeria .item11 {
     grid-column: 2/4;
   }
-  .item12 {
+  .galeria .item12 {
     grid-column: 4/5;
   }
-  .item13 {
+  .galeria .item13 {
     grid-column: 1/3;
   }
-  .item17 {
+  .galeria .item17 {
     grid-column: 2/4;
   }
-  .item19 {
+  .galeria .item19 {
     grid-column: 1/3;
   }
-  .item20 {
+  .galeria .item20 {
     grid-column: 3/5;
+  }
+  .discografia {
+    min-height: 450px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 450px);
+  }
+  .discografia iframe {
+    position: relative;
+    top: 8px;
+  }
+  .discografia .disco2 iframe {
+    position: relative;
+    top: 0px;
+  }
+  #discografia_palabra, #nuestra {
+    z-index: 1000;
+    position: relative;
+    align-content: flex-end;
+    justify-content: flex-start;
+    padding-left: 20px;
+    top: 390px;
+  }
+  #nuestra {
+    justify-content: flex-end;
+    top: 38px;
+    padding-right: 20px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -432,5 +492,32 @@ footer a {
 @media only screen and (min-width: 1000px) {
   .galeria {
     grid-template-rows: repeat(7, 350px);
+  }
+}
+@media only screen and (min-width: 1450px) {
+  .lanzamientos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .yaLoSe iframe {
+    position: relative;
+    top: 48px;
+  }
+  .comoMessi iframe {
+    position: relative;
+    top: 15px;
+  }
+  #ultimos {
+    position: relative;
+    bottom: 325px;
+    justify-content: flex-end;
+    padding-right: 25px;
+  }
+  #lanzamientos_palabra {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    position: relative;
+    top: 27px;
   }
 }/*# sourceMappingURL=estilos.css.map */
