@@ -113,8 +113,13 @@ form{
     font-size: 20px;
 }
 
-label span{
+label{
+    animation-name: showUp;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    span{
     color: $color1;
+    }
 }
 
 input[type=text]{
@@ -128,11 +133,17 @@ input[type=text]{
     outline: none;
     padding-top: 10px;
     font-size: 14px;
+    animation-name: showUp;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
 }
 
 ::placeholder{
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
+    animation-name: showUp;
+    animation-duration: 5;
+    animation-iteration-count: 1;
 
 }
 
@@ -150,6 +161,18 @@ input[type=submit]{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 14px;
+    animation-name: showUp;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes showUp{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
 }
 
 .videoContainer{
@@ -343,7 +366,6 @@ iframe{
     right: 8px;
 }
 // Tienda end
-
 
 .construction{
     background-image: url(../images/construction.jpeg);

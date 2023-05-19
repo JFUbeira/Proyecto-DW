@@ -108,6 +108,11 @@ form {
   font-size: 20px;
 }
 
+label {
+  animation-name: showUp;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
 label span {
   color: #F84646;
 }
@@ -123,16 +128,25 @@ input[type=text] {
   outline: none;
   padding-top: 10px;
   font-size: 14px;
+  animation-name: showUp;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
 }
 
 ::-moz-placeholder {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
+  animation-name: showUp;
+  animation-duration: 5;
+  animation-iteration-count: 1;
 }
 
 ::placeholder {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
+  animation-name: showUp;
+  animation-duration: 5;
+  animation-iteration-count: 1;
 }
 
 input[type=submit] {
@@ -149,8 +163,19 @@ input[type=submit] {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  animation-name: showUp;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
 }
 
+@keyframes showUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
 .videoContainer {
   position: relative;
   overflow: hidden;
