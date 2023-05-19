@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url(../fonts/GothamBold.ttf);
+}
+@font-face {
+  font-family: "GothamMedium";
+  src: url(../fonts/GothamMedium.ttf);
+}
 .navbar {
   background-color: black;
 }
@@ -74,6 +82,10 @@ footer a {
   justify-content: center;
 }
 
+.newsletter {
+  font-family: "GothamMedium";
+}
+
 .anexate {
   position: relative;
   bottom: 14px;
@@ -97,7 +109,7 @@ form {
 }
 
 label span {
-  color: #f84646;
+  color: #F84646;
 }
 
 input[type=text] {
@@ -310,6 +322,47 @@ iframe {
   background-image: url(../images/G20.JPG);
 }
 
+.tienda {
+  width: 100%;
+  min-height: 200px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 400px);
+}
+.tienda .merch {
+  border: 0.1px solid rgba(131, 131, 131, 0.555);
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-item {
+  height: 300px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+}
+
+.merchDescription {
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 15px;
+  font-size: 20px;
+}
+
+.sinStock {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 30px;
+  right: 8px;
+}
+
 .construction {
   background-image: url(../images/construction.jpeg);
   height: 100vh;
@@ -376,6 +429,16 @@ iframe {
   }
   .videoDescription h2 {
     font-size: 25px;
+  }
+  .sinStock {
+    position: relative;
+    top: 42px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .tienda {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 400px);
   }
 }
 @media only screen and (min-width: 810px) {
@@ -473,7 +536,7 @@ iframe {
   .anexate {
     display: flex;
     justify-content: center;
-    top: 10px;
+    top: 5px;
     right: 240px;
   }
   input[type=text] {
@@ -481,17 +544,50 @@ iframe {
     bottom: 38px;
   }
   input[type=submit] {
-    left: 140px;
+    left: 142.5px;
     bottom: 34px;
   }
   footer {
     font-size: 40px;
     letter-spacing: 30px;
   }
+  .sinStock {
+    position: relative;
+    right: 140px;
+    top: 55px;
+  }
 }
 @media only screen and (min-width: 1000px) {
   .galeria {
     grid-template-rows: repeat(7, 350px);
+  }
+  .tienda {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 80vh);
+  }
+  .tienda .merch {
+    border-color: black;
+    position: relative;
+    top: 150px;
+    overflow: hidden;
+    height: 60vh;
+  }
+  .carousel-item {
+    height: 300px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .carousel-item img {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .carousel-item {
+    height: 350px;
+  }
+  .carousel-item img {
+    height: 350px;
   }
 }
 @media only screen and (min-width: 1450px) {
@@ -519,5 +615,22 @@ iframe {
     padding-left: 20px;
     position: relative;
     top: 27px;
+  }
+  .carousel-item {
+    height: 400px;
+  }
+  .carousel-item img {
+    height: 400px;
+  }
+  .footerTienda {
+    padding-bottom: 33px;
+  }
+}
+@media only screen and (min-width: 1700px) {
+  .carousel-item {
+    height: 500px;
+  }
+  .carousel-item img {
+    height: 500px;
   }
 }/*# sourceMappingURL=estilos.css.map */
