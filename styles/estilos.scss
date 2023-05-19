@@ -326,15 +326,6 @@ iframe{
     }
 }
 
-.carousel-item {
-    height: 300px;
-    overflow: hidden;
-    width: 100%;
-    }
-    .carousel-item img {
-    width: 100%;
-    }
-
 .merchDescription{
     color: whitesmoke;
     display: flex;
@@ -575,24 +566,6 @@ iframe{
         height: 60vh;
         }
     }
-    .carousel-item {
-        height: 300px;
-        overflow: hidden;
-        width: 100%;
-        }
-        .carousel-item img {
-        width: 100%;
-        height: 300px;
-        }
-}
-
-@media only screen and (min-width: 1280px){
-    .carousel-item {
-        height: 350px;
-        }
-        .carousel-item img {
-        height: 350px;
-        }
 }
 
 @media only screen and (min-width: 1450px){
@@ -625,22 +598,7 @@ iframe{
         position: relative;
         top: 27px;
     }
-    .carousel-item {
-        height: 400px;
-        }
-        .carousel-item img {
-        height: 400px;
-        }
     .footerTienda{
         padding-bottom: 33px;
     }
-}
-
-@media only screen and (min-width: 1700px){
-    .carousel-item {
-        height: 500px;
-    }
-        .carousel-item img {
-        height: 500px;
-        }
 }
