@@ -367,12 +367,53 @@ iframe{
 }
 // Tienda end
 
-.construction{
-    background-image: url(../images/construction.jpeg);
-    height: 100vh;
-    width: auto;
-    background-position: bottom;
+// Nosotros start
+.nosotros{
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.452)), url(../images/nosotros1.JPG); 
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    .anexoBio{
+        text-align: center;
+        position: relative;
+        top: 260px;
+        color: whitesmoke;
+        font-family: "Big Caslon";
+        letter-spacing: 8.5px;
+    }   
 }
+
+.bio{
+    @extend .nosotros;
+    background-image:
+    linear-gradient(to bottom, rgba(117, 19, 93, 0.623), rgba(48, 48, 48, 0.726)), url(../images/nosotros3.JPG);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.bio2{
+    @extend .bio;
+    background-image:
+    linear-gradient(to bottom, rgba(48, 48, 48, 0.726), rgba(48, 48, 48, 0.726)), url(../images/nosotros2.JPG);
+    display: flex;
+    justify-content: center;
+}
+
+.bioParagraph{
+    color: rgb(255, 255, 255);
+    font-family: Helvetica, sans-serif;
+    // background-color: rgba(117, 19, 93, 0.062);
+    border-radius: 3px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    animation-name: showUp;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+// Nosotros end
 
 // Media queries
 @media only screen and (min-width: 410px){
@@ -526,7 +567,6 @@ iframe{
 
 }
 
-
 @media only screen and (min-width: 992px){
     .navbar-brand{
         font-size: 40px;
@@ -571,6 +611,13 @@ iframe{
         right: 140px;
         top: 55px;
     }
+    .nosotros{
+        height: 400px;
+        .anexoBio{
+            top: 340px;
+            font-size: 35px;
+        }
+    }
 }
 
 @media only screen and (min-width: 1000px){
@@ -587,6 +634,10 @@ iframe{
         overflow: hidden;
         height: 60vh;
         }
+    }
+    .footerTienda{
+        padding-top: 40px;
+        z-index: 5;
     }
 }
 
@@ -621,6 +672,18 @@ iframe{
         top: 27px;
     }
     .footerTienda{
-        padding-bottom: 33px;
+        padding-bottom: 30px;
+        padding-top: 18px;
+    }
+    .nosotros{
+        height: 600px;
+        .anexoBio{
+            top: 500px;
+        }
+    }
+    .bioParagraph{
+        margin-left: 100px;
+        margin-right: 100px;
+        font-size: 20px;
     }
 }
